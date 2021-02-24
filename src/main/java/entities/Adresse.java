@@ -30,7 +30,6 @@ public class Adresse {
 	 */
 	public Adresse() {}
 	
-	
 
 	/**
 	 * Constructor
@@ -86,8 +85,6 @@ public class Adresse {
 	public String toString() {
 		return "Adresse : " + numero + " " + rue + ", " + codePostal + " " + ville + "\n";
 	}
-	
-	
 	
 	
 }
