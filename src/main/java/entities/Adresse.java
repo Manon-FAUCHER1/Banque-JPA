@@ -3,6 +3,7 @@
  */
 package entities;
 
+import javax.persistence.Column;
 import javax.persistence.Embeddable;
 
 /**
@@ -12,12 +13,25 @@ import javax.persistence.Embeddable;
 @Embeddable
 public class Adresse {
 
+	@Column(name = "Numero", nullable = true)
 	private int numero;
+	
+	@Column(name = "Rue", nullable = true)
 	private String rue;
+	
+	@Column(name = "Code_Postal", nullable = true)
 	private int codePostal;
+	
+	@Column(name = "Ville", nullable = true)
 	private String ville;
 	
+	/**
+	 * Constructor
+	 */
+	public Adresse() {}
 	
+	
+
 	/**
 	 * Constructor
 	 * @param numero
